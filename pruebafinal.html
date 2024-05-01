@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotora Mabri</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.logo {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.title {
+    text-decoration: underline; /* Subrayado para el título */
+}
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.registro-table {
+    max-width: 400px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #5f6768;
+    border: 2px solid #000; 
+    margin: 0 auto;
+}
+
+.registro-table td {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.vehicle {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.vehicle img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="https://cdn.pixabay.com/photo/2021/09/20/23/02/car-6642023_640.jpg" alt="Logo de Automotora Mabri" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#quienes-somos">Quiénes somos</a></li>
+                    <li><a href="#registro">Registro</a></li>
+                    <li><a href="#vehiculos">Vehículos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="quienes-somos" class="section">
+        <div class="container">
+            <h1 class="title">Automotora Mabri</h1>
+            <h2>Quiénes somos</h2>
+            <p>Somos una automotora dedicada a ofrecer una amplia variedad de vehículos nuevos y usados.
+                Hasta el momento no tenemos gran variedad de vehículos pero empezamos con muy buenas naves. 
+            </p>
+        </div>
+    </section>
+
+    <section id="registro" class="section">
+        <div class="container">
+            <h2>Registro</h2>
+            <table class="registro-table">
+                <tr>
+                    <td colspan="2">
+                        
+                            <p>Registro completado.</p>
+                        
+                            <p>Complete el siguiente formulario para registrarse:</p>
+                            <form action="procesar_registro.php" method="POST">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required><br><br>
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required><br><br>
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+                                <label for="telefono">Número de teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" required><br><br>
+                                <button type="submit" name="submit">Registrarse</button>
+                            </form>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="vehiculos" class="section">
+        <div class="container">
+            <h2>Vehículos</h2>
+            <div class="vehicle">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/ford-mustang-2024-1-1663227658.jpg" alt="Auto 1">
+                <h3>Ford Mustang</h3>
+                <p>Año: 2024</p>
+                <p>Precio: $120,000</p>
+            </div>
+            <div class="vehicle">
+                <img src="https://www.diariomotor.com/imagenes/2022/10/audi-r8-v10-gt-rwd-2023-104-633c05c160511.jpg" alt="Auto 2">
+                <h3>Audi R8</h3>
+                <p>Año: 2024</p>
+                <p>Precio: $135,000</p>
+            </div>
+            <div class="vehicle">
+                <img src="https://acnews.blob.core.windows.net/imgnews/large/NAZ_cebcc49c3110490390d4ded056181839.webp" alt="Auto 3">
+                <h3>Nissan GTR</h3>
+                <p>Año: 2024</p>
+                <p>Precio: $120,000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¡Contáctanos para obtener más información sobre nuestros vehículos!</p>
+            <ul>
+                <li>Teléfono: 9 3396 7525</li>
+                <li>Email: pruebaMauri@automotoramabri.com</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Automotora Mabri. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
